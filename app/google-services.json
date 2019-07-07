@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "525673876440",
+    "firebase_url": "https://emily-resto.firebaseio.com",
+    "project_id": "emily-resto",
+    "storage_bucket": "emily-resto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525673876440:android:d8941acf196c56e0",
+        "android_client_info": {
+          "package_name": "com.example.androideatit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525673876440-i0i787qcn7b89fg0hn4vm6m9pcsdokdr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androideatit",
+            "certificate_hash": "f1621686e411a5cd568b74dbb3bd379a7087ac8d"
+          }
+        },
+        {
+          "client_id": "525673876440-tfjiiv4ces2q29brbf7qg9fuiu26npru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL2MectYBgisey6jc4oFdEzm2pQQaYaj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525673876440-tfjiiv4ces2q29brbf7qg9fuiu26npru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

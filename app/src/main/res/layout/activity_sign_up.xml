@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    >
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp">
+
+            <LinearLayout
+                android:id="@+id/layForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="@dimen/form_margin"
+                android:paddingTop="16dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EatIt.Widget.FilledBox"
+                    android:hint="Nama Pengguna"
+                    app:errorEnabled="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColor="@android:color/white"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layFirstname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/EatIt.Widget.FilledBox"
+                        app:errorEnabled="true"
+                        android:layout_marginBottom="8dp"
+                        android:hint="Nama Depan"
+                        android:layout_marginRight="4dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtFirstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:textColor="@android:color/white"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layLastname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/EatIt.Widget.FilledBox"
+                        android:layout_marginBottom="8dp"
+                        app:errorEnabled="true"
+                        android:hint="Nama Belakang"
+                        android:layout_marginLeft="4dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtLastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:textColor="@android:color/white"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layNumberPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EatIt.Widget.FilledBox"
+                    app:errorEnabled="true"
+                    android:layout_marginBottom="8dp"
+                    android:hint="Nomor Telepon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtNumberPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:textColor="@android:color/white"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layPassword"
+                    style="@style/EatIt.Widget.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:hint="Sandi"
+                    app:errorEnabled="true"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="@android:color/white"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EatIt.Widget.FilledBox"
+                    android:hint="Konfirmasi Sandi"
+                    app:passwordToggleEnabled="true"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="@android:color/white"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="150dp"
+                    android:text="Registrasi"
+                    style="@style/EatIt.Widget.MaterialButton"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layForm"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/collapsingToolbar"
+            app:layout_anchorGravity="bottom|start"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_round_arrow_back_ios_24px"/>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/colorPrimary"
+                app:expandedTitleGravity="top"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    app:layout_collapseMode="pin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textHeaderSignUp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Eat It - Registrasi"
+                            android:layout_centerInParent="true"
+                            android:textSize="24sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@android:color/white"/>
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    
+
+</RelativeLayout>
